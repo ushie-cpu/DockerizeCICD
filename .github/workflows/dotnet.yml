@@ -1,0 +1,22 @@
+name: CICD_Heroku
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build-to_heroku:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Check out codes
+      working-directory: ./
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }} 
+        APP_NAME: ${{ 'dockerappnew' }}
+      run: |
+        docker build -t firstdocker110 .
+        docker tag firstdocker110 registry.heroku.com/$APP_NAME/web
+        docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+        heroku container:push web -a $APP_NAME
+        heroku container:release web -a $APP_NAME
