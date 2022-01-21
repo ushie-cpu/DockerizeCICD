@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerizeWithCICD", "DockerizeWithCICD\DockerizeWithCICD.csproj", "{F1A442FA-324E-47B4-A657-C6442D71859E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1A442FA-324E-47B4-A657-C6442D71859E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A442FA-324E-47B4-A657-C6442D71859E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A442FA-324E-47B4-A657-C6442D71859E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A442FA-324E-47B4-A657-C6442D71859E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD24A07A-7095-4E55-A999-4B84F1DAD191}
+	EndGlobalSection
+EndGlobal
